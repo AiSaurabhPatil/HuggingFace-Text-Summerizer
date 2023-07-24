@@ -18,7 +18,7 @@ class DataTransformation:
         return{
             'input_ids': input_encodings['input_ids'],
             'attention_mask': input_encodings['attention_mask'],
-            'label': target_encodings['input_ids']
+            'labels': target_encodings['input_ids']
         }
 
     def convert(self):
